@@ -1,38 +1,63 @@
-<form action="action_page.php">
-  <div class="container">
-    <h1>New user Register for DevOps Learning</h1>
-    <p>Please fill in this form to create an account.</p>
-    <hr>
-     
-    <label for="Name"><b>Enter Name</b></label>
-    <input type="text" placeholder="Enter Full Name" name="Name" id="Name" required>
-    <br>
-    
-    <label for="mobile"><b>Enter mobile</b></label>
-    <input type="text" placeholder="Enter moible number" name="mobile" id="mobile" required>
-    <br>
+<!DOCTYPE html> 
+<html lang="en"> 
 
-    <label for="email"><b>Enter Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
-    <br>
+<head> 
+	<meta charset="UTF-8" /> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0" /> 
+		
+	<title> 
+		How to animate a straight 
+		line in linear motion? 
+	</title> 
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-    <br>
+	<style> 
+		body { 
+			margin: 0; 
+			padding: 0; 
+			background: green; 
+		} 
 
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-    <hr>
-    <br>
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-    <button type="submit" class="registerbtn">Register</button>
-  </div>
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
+		.geeks { 
+			width: 400px; 
+			height: 2px; 
+			background: #fff; 
+			position: absolute; 
+			top: 50%; 
+			left: 50%; 
+			transform: translate(-50%, -50%); 
+		} 
 
-   <h1> Thankyou, Happy Learning </h1>
+		.geeks::before { 
+			content: ""; 
+			position: absolute; 
+			top: 0; 
+			left: 0; 
+			width: 100%; 
+			height: 100%; 
+			background: green; 
+			animation: animate 5s linear infinite; 
+		} 
 
-  
-</form>
+		@keyframes animate { 
+			0% { 
+				left: 0; 
+			} 
+
+			50% { 
+				left: 100%; 
+			} 
+
+			0% { 
+				left: 0; 
+			} 
+		} 
+	</style> 
+</head> 
+
+<body> 
+	<div class="geeks"></div> 
+</body> 
+
+</html> 
 
